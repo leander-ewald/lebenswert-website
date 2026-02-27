@@ -26,13 +26,13 @@ export default function Header() {
             <span className="text-xl sm:text-2xl font-extrabold tracking-tight font-[family-name:var(--font-heading)]">
               Lebens<span className="text-orange-600">WERT</span>
             </span>
-            <span className="hidden sm:block w-px h-8 bg-gray-300" />
+            <span className="hidden sm:block w-px h-10 bg-gray-300" />
             <Image
               src="/logos/zukunftswerkstatt.png"
               alt="Zukunftswerkstatt"
-              width={140}
-              height={40}
-              className="hidden sm:block h-8 w-auto"
+              width={200}
+              height={56}
+              className="hidden sm:block h-12 w-auto"
             />
           </Link>
 

@@ -200,14 +200,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Win-Win Partnerschaft */}
+      {/* Win-Win — Durch Kooperation zur Integration */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-anthrazit rounded-3xl p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/3 flex justify-center">
               <Image
                 src="/logos/winwin-winwin_logo_rgb_internet.png"
-                alt="Win-Win Partnerschaft"
+                alt="Win-Win — Durch Kooperation zur Integration"
                 width={280}
                 height={280}
                 className="w-48 sm:w-64 lg:w-72"
@@ -215,26 +215,29 @@ export default function Home() {
             </div>
             <div className="lg:w-2/3 text-center lg:text-left">
               <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-3">
-                Win-Win für alle
+                ESF Plus Förderprogramm
               </p>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-                Gemeinsam gewinnen
+                Win-Win — Durch Kooperation zur Integration
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Bei LebensWERT profitieren alle: Teilnehmer finden ihren Weg in
-                Arbeit, Unternehmen gewinnen motivierte Mitarbeiter, und das
-                Quartier wird lebenswerter. Unsere Projekte verbinden Menschen
-                und schaffen echte Perspektiven — für jeden Beteiligten.
+                Unsere Zukunftswerkstatt wird im Rahmen des ESF
+                Plus-Programms &bdquo;Win-Win&ldquo; gefördert. Das Programm
+                bringt verschiedene Akteure zusammen — Kommunen, Jobcenter,
+                soziale Träger wie die Drogenberatung und Unternehmen — um junge
+                Männer zwischen 18 und 35 Jahren zu erreichen, die durchs Raster
+                fallen: ohne Job, ohne Perspektive, oft mit Suchtproblemen oder
+                ohne festen Wohnsitz.
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <div className="bg-white/10 rounded-xl px-5 py-3 text-white text-sm font-medium">
-                  Teilnehmer → Ausbildung & Job
+                  Kooperation mit Drogenberatung & Streetwork
                 </div>
                 <div className="bg-white/10 rounded-xl px-5 py-3 text-white text-sm font-medium">
-                  Unternehmen → Fachkräfte
+                  Beratung, Coaching & Alltagshilfe
                 </div>
                 <div className="bg-white/10 rounded-xl px-5 py-3 text-white text-sm font-medium">
-                  Quartier → Gemeinschaft
+                  Wege in Ausbildung & Arbeit
                 </div>
               </div>
             </div>
