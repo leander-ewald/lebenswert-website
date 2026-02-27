@@ -184,9 +184,9 @@ export default function Veranstaltungen() {
                   {day.events.map((event) => (
                     <div
                       key={`${day.day}-${event.name}`}
-                      className="flex items-start gap-4 bg-white rounded-xl p-4"
+                      className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 bg-white rounded-xl p-3 sm:p-4"
                     >
-                      <div className="flex items-center gap-1 text-sm text-darkgray shrink-0 w-32">
+                      <div className="flex items-center gap-1 text-sm text-darkgray shrink-0 sm:w-32">
                         <Clock className="w-4 h-4 text-proj-checkpoint" />
                         {event.time}
                       </div>
@@ -236,9 +236,9 @@ export default function Veranstaltungen() {
                   {day.events.map((event) => (
                     <div
                       key={`${day.day}-${event.name}`}
-                      className="flex items-start gap-4 bg-warmgray rounded-xl p-4"
+                      className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 bg-warmgray rounded-xl p-3 sm:p-4"
                     >
-                      <div className="flex items-center gap-1 text-sm text-darkgray shrink-0 w-32">
+                      <div className="flex items-center gap-1 text-sm text-darkgray shrink-0 sm:w-32">
                         <Clock className="w-4 h-4 text-proj-lichtblick" />
                         {event.time}
                       </div>

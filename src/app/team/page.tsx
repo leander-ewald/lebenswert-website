@@ -161,11 +161,11 @@ export default function Team() {
             Ehrenamtlich engagiert für den Verein.
           </p>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {vorstand.map((person) => (
-              <div key={person.name} className="bg-white rounded-2xl p-6 text-center">
-                <div className="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="w-8 h-8 text-orange-600" />
+              <div key={person.name} className="bg-white rounded-2xl p-5 sm:p-6 text-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-orange-100 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                  <Users className="w-6 h-6 sm:w-8 sm:h-8 text-orange-600" />
                 </div>
                 <h3 className="font-bold text-anthrazit">{person.name}</h3>
                 <p className="text-sm text-darkgray">{person.role}</p>

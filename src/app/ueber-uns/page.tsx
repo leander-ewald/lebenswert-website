@@ -107,7 +107,7 @@ export default function UeberUns() {
 
       {/* Video */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-anthrazit mb-4 text-center">
             LebensWERT erleben
           </h2>
@@ -161,7 +161,7 @@ export default function UeberUns() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {impact.map((item) => (
               <div key={item.label} className="text-center">
-                <p className="text-4xl sm:text-5xl font-extrabold text-orange-500 mb-2">
+                <p className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-orange-500 mb-2">
                   {item.number}
                 </p>
                 <p className="text-sm sm:text-base text-gray-300">
@@ -234,7 +234,7 @@ export default function UeberUns() {
             Unsere Arbeit wird möglich durch die Unterstützung von:
           </p>
 
-          <div className="flex flex-wrap justify-center items-center gap-10 mb-8">
+          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 mb-8">
             <Image
               src="/logos/esf-bmas_eu_foerderlogo.png"
               alt="BMAS & EU ESF Plus Förderlogo"

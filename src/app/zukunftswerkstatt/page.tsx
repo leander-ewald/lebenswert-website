@@ -274,8 +274,8 @@ export default function Zukunftswerkstatt() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {team.map((person) => (
               <div key={person.name} className="text-center">
-                <div className="w-24 h-24 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="w-10 h-10 text-orange-600" />
+                <div className="w-16 h-16 sm:w-24 sm:h-24 bg-orange-100 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                  <Users className="w-8 h-8 sm:w-10 sm:h-10 text-orange-600" />
                 </div>
                 <h3 className="font-bold text-anthrazit">{person.name}</h3>
                 <p className="text-sm text-darkgray">{person.role}</p>
@@ -345,7 +345,7 @@ export default function Zukunftswerkstatt() {
       {/* Für Netzwerkpartner */}
       <section className="py-20 bg-warmgray">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl p-8 sm:p-12">
+          <div className="bg-white rounded-3xl p-5 sm:p-8 lg:p-12">
             <p className="text-sm text-orange-600 font-semibold uppercase tracking-wider mb-3">
               Für Netzwerkpartner
             </p>

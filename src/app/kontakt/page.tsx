@@ -130,9 +130,9 @@ export default function Kontakt() {
             <h2 className="text-2xl font-extrabold text-anthrazit mb-4">
               Ihr Ansprechpartner
             </h2>
-            <div className="flex items-start gap-6">
-              <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center shrink-0">
-                <span className="text-2xl font-bold text-orange-600">AB</span>
+            <div className="flex items-start gap-4 sm:gap-6">
+              <div className="w-14 h-14 sm:w-20 sm:h-20 bg-orange-100 rounded-full flex items-center justify-center shrink-0">
+                <span className="text-xl sm:text-2xl font-bold text-orange-600">AB</span>
               </div>
               <div>
                 <h3 className="text-lg font-bold text-anthrazit">

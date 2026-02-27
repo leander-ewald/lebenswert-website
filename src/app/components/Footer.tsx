@@ -32,9 +32,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Kontakt */}
           <div>
-            <p className="text-xl font-extrabold mb-4 font-[family-name:var(--font-heading)]">
-              Lebens<span className="text-orange-600">WERT</span>
-            </p>
+            <img
+              src="/logos/lebenswert.svg"
+              alt="LebensWERT Iserlohn"
+              className="h-8 w-auto mb-4"
+            />
             <p className="text-sm text-gray-400 mb-4">
               LebensWERT Iserlohn e.V.
             </p>
@@ -125,7 +127,7 @@ export default function Footer() {
 
         {/* Förder-Logos Pflichthinweis */}
         <div className="mt-12 pt-8 border-t border-gray-700">
-          <div className="flex flex-wrap justify-center items-center gap-8 mb-4">
+          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 mb-4">
             <Image
               src="/logos/esf-bmas_eu_foerderlogo.png"
               alt="BMAS & EU ESF Plus Förderlogo"

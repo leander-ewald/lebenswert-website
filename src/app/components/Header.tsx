@@ -20,26 +20,28 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-warmgray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 sm:h-28">
+        <div className="flex items-center justify-between h-20 sm:h-24">
           {/* Logos */}
-          <Link href="/" className="flex items-center gap-4 shrink-0">
-            <span className="text-xl sm:text-2xl font-extrabold tracking-tight font-[family-name:var(--font-heading)]">
-              Lebens<span className="text-orange-600">WERT</span>
-            </span>
-            <span className="hidden sm:block w-px h-16 sm:h-20 bg-gray-300" />
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 shrink-0">
+            {/* LebensWERT Logo (Bild statt Text) */}
+            <img
+              src="/logos/lebenswert-dark.svg"
+              alt="LebensWERT Iserlohn"
+              className="h-8 sm:h-10 w-auto"
+            />
+            <span className="hidden sm:block w-px h-10 sm:h-14 bg-gray-300" />
             <Image
               src="/logos/zukunftswerkstatt.png"
               alt="Zukunftswerkstatt"
-              width={500}
-              height={140}
-              className="hidden sm:block w-auto"
-              style={{ height: '84px' }}
+              width={820}
+              height={416}
+              className="hidden sm:block h-10 sm:h-14 w-auto"
               priority
             />
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-5">
+          <nav className="hidden xl:flex items-center gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -68,7 +70,7 @@ export default function Header() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden p-2 -mr-2 text-anthrazit"
+            className="xl:hidden p-2.5 -mr-2.5 text-anthrazit"
             aria-label="Menü öffnen"
           >
             {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -78,7 +80,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="lg:hidden bg-white border-t border-warmgray">
+        <div className="xl:hidden bg-white border-t border-warmgray">
           <nav className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
             <Link
               href="/zukunftswerkstatt#kontakt"

@@ -135,7 +135,7 @@ export default function Home() {
       {/* Zukunftswerkstatt Teaser */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-orange-50 to-orange-100/50 rounded-3xl p-8 sm:p-12 lg:p-16">
+          <div className="bg-gradient-to-br from-orange-50 to-orange-100/50 rounded-3xl p-5 sm:p-8 lg:p-16">
             <div className="flex flex-wrap items-center gap-3 mb-6">
               <span className="bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                 ESF Plus gefördert
@@ -207,7 +207,7 @@ export default function Home() {
       {/* Win-Win — Durch Kooperation zur Integration */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-anthrazit rounded-3xl p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-10">
+          <div className="bg-anthrazit rounded-3xl p-5 sm:p-8 lg:p-16 flex flex-col lg:flex-row items-center gap-6 sm:gap-10">
             <div className="lg:w-1/3 flex justify-center">
               <Image
                 src="/logos/winwin-winwin_logo_rgb_internet.png"
@@ -245,9 +245,9 @@ export default function Home() {
               </div>
               <a
                 href="tel:015152496870"
-                className="inline-flex items-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-500 transition-colors"
+                className="flex sm:inline-flex items-center justify-center gap-2 bg-orange-600 text-white px-5 sm:px-6 py-3 rounded-xl font-semibold text-sm sm:text-base hover:bg-orange-500 transition-colors"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-5 h-5 shrink-0" />
                 Jetzt anrufen: 0151 52496870
               </a>
             </div>
@@ -313,7 +313,7 @@ export default function Home() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {impact.map((item) => (
               <div key={item.label} className="text-center">
-                <p className="text-4xl sm:text-5xl font-extrabold text-orange-500 mb-2">
+                <p className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-orange-500 mb-2">
                   {item.number}
                 </p>
                 <p className="text-sm sm:text-base text-gray-300">
@@ -465,7 +465,7 @@ export default function Home() {
           <p className="text-xs text-midgray text-center mb-6 uppercase tracking-wider font-medium">
             Gefördert & unterstützt durch
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-10">
+          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10">
             <Image
               src="/logos/esf-bmas_eu_foerderlogo.png"
               alt="BMAS & EU ESF Plus Förderlogo"
