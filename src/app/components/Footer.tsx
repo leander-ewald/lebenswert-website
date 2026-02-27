@@ -39,13 +39,13 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-2 text-sm text-gray-300">
               <a
-                href="https://maps.google.com/?q=Obere+Mühle+28+58636+Iserlohn"
+                href="https://maps.google.com/?q=Am+Bilstein+10-12+58638+Iserlohn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-2 hover:text-orange-500 transition-colors"
               >
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-                Obere Mühle 28, 58636 Iserlohn
+                Am Bilstein 10-12, 58638 Iserlohn
               </a>
               <a
                 href="tel:015152496870"

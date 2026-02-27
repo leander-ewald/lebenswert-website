@@ -39,7 +39,7 @@ export default function Datenschutz() {
               </strong>
               <br />
               Die Datenverarbeitung auf dieser Website erfolgt durch den
-              Websitebetreiber: LebensWERT Iserlohn e.V., Obere Mühle 28, 58636
+              Websitebetreiber: LebensWERT Iserlohn e.V., Am Bilstein 10-12, 58638
               Iserlohn.
             </p>
           </div>
@@ -51,9 +51,9 @@ export default function Datenschutz() {
             <p>
               LebensWERT Iserlohn e.V.
               <br />
-              Obere Mühle 28
+              Am Bilstein 10-12
               <br />
-              58636 Iserlohn
+              58638 Iserlohn
               <br />
               <br />
               Telefon:{" "}

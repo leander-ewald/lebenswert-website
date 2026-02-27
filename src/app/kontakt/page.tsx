@@ -25,8 +25,8 @@ const kontaktWege = [
   {
     icon: MapPin,
     label: "Adresse",
-    value: "Obere Mühle 28, 58636 Iserlohn",
-    href: "https://maps.google.com/?q=Obere+Mühle+28+58636+Iserlohn",
+    value: "Am Bilstein 10-12, 58638 Iserlohn",
+    href: "https://maps.google.com/?q=Am+Bilstein+10-12+58638+Iserlohn",
     desc: "Büro des Vereins",
   },
 ];
@@ -34,9 +34,9 @@ const kontaktWege = [
 const standorte = [
   {
     name: "Vereinsbüro",
-    address: "Obere Mühle 28, 58636 Iserlohn",
+    address: "Am Bilstein 10-12, 58638 Iserlohn",
     desc: "Hauptsitz von LebensWERT Iserlohn e.V.",
-    href: "https://maps.google.com/?q=Obere+Mühle+28+58636+Iserlohn",
+    href: "https://maps.google.com/?q=Am+Bilstein+10-12+58638+Iserlohn",
   },
   {
     name: "Zukunftswerkstatt",

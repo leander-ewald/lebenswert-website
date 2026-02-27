@@ -21,9 +21,9 @@ export default function Impressum() {
             <p>
               LebensWERT Iserlohn e.V.
               <br />
-              Obere Mühle 28
+              Am Bilstein 10-12
               <br />
-              58636 Iserlohn
+              58638 Iserlohn
             </p>
           </div>
 
@@ -85,9 +85,9 @@ export default function Impressum() {
             <p>
               Alex Breuker
               <br />
-              Obere Mühle 28
+              Am Bilstein 10-12
               <br />
-              58636 Iserlohn
+              58638 Iserlohn
             </p>
           </div>
 
