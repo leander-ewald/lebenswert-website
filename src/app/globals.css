@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-orange-50: #FFF9F2;
+  --color-orange-100: #FFF3E6;
+  --color-orange-500: #FF8533;
+  --color-orange-600: #FF6600;
+  --color-anthrazit: #2D2D2D;
+  --color-darkgray: #4A4A4A;
+  --color-midgray: #8A8A8A;
+  --color-warmgray: #F5F5F3;
+
+  /* Projekt-Farben */
+  --color-proj-zukunft: #FF6600;
+  --color-proj-checkpoint: #4A90D9;
+  --color-proj-lichtblick: #F5A623;
+  --color-proj-schaffen: #7B8D4E;
+  --color-proj-viertel: #9B6B9E;
+  --color-proj-culture: #E85D75;
+  --color-proj-lebenslauf: #47B881;
+
+  --font-heading: var(--font-jakarta);
+  --font-body: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+  color: var(--color-anthrazit);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+}
