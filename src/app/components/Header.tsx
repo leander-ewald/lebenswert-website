@@ -20,19 +20,20 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-warmgray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 sm:h-24">
+        <div className="flex items-center justify-between h-20 sm:h-28">
           {/* Logos */}
           <Link href="/" className="flex items-center gap-4 shrink-0">
             <span className="text-xl sm:text-2xl font-extrabold tracking-tight font-[family-name:var(--font-heading)]">
               Lebens<span className="text-orange-600">WERT</span>
             </span>
-            <span className="hidden sm:block w-px h-14 bg-gray-300" />
+            <span className="hidden sm:block w-px h-16 sm:h-20 bg-gray-300" />
             <Image
               src="/logos/zukunftswerkstatt.png"
               alt="Zukunftswerkstatt"
-              width={320}
-              height={90}
-              className="hidden sm:block h-16 w-auto"
+              width={500}
+              height={140}
+              className="hidden sm:block w-auto"
+              style={{ height: '84px' }}
               priority
             />
           </Link>

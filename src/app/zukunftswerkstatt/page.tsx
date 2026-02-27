@@ -86,8 +86,8 @@ const team = [
 const fuerWen = [
   "Du bist zwischen 18 und 35 Jahre alt",
   "Du suchst einen Job oder eine Ausbildung",
-  "Du hast mit Sucht oder Drogen zu kämpfen",
-  "Du hast keinen festen Wohnsitz",
+  "Du steckst in einer schwierigen Lebenssituation",
+  "Du brauchst Unterstützung, um wieder auf die Beine zu kommen",
   "Du brauchst Hilfe bei Bewerbungen oder Behörden",
   "Du wünschst dir mehr Struktur und Halt im Alltag",
   "Du weißt einfach nicht mehr weiter",

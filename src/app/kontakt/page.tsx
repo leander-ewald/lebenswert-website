@@ -75,7 +75,7 @@ export default function Kontakt() {
               Du brauchst Hilfe? Meld dich — wir sind für dich da.
             </h2>
             <p className="text-gray-300 mb-6 max-w-xl mx-auto">
-              Kein Job, Suchtprobleme, kein Dach über dem Kopf? Du musst das
+              Du steckst fest und weißt nicht weiter? Du musst das
               nicht alleine schaffen. Ruf an oder schreib uns — kostenlos und
               vertraulich.
             </p>

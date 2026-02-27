@@ -79,7 +79,7 @@ const testimonials = [
   },
   {
     quote:
-      "Ich war in einer schwierigen Phase — Drogen, kein Job, keine Perspektive. Die Zukunftswerkstatt hat mir geholfen, da rauszukommen. Heute habe ich eine feste Stelle.",
+      "Ich war in einer richtig schwierigen Phase — kein Job, keine Perspektive, alles lief schief. Die Zukunftswerkstatt hat mir geholfen, da rauszukommen. Heute habe ich eine feste Stelle.",
     name: "K., 29 Jahre",
   },
   {
@@ -93,7 +93,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-orange-50 via-white to-warmgray pt-20">
+      <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-orange-50 via-white to-warmgray pt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
           <div className="max-w-3xl">
             <p className="text-orange-600 font-semibold text-sm uppercase tracking-wider mb-4">
@@ -104,9 +104,10 @@ export default function Home() {
               <span className="text-orange-600">lebenswertes</span> Iserlohn
             </h1>
             <p className="text-lg sm:text-xl text-darkgray leading-relaxed mb-10 max-w-2xl">
-              Kein Job, kein Plan, schwierige Phase? Wir helfen dir weiter.
-              Seit 2015 stärken wir Menschen in Iserlohn — mit Coaching,
-              Beratung und einem offenen Ohr. Kostenlos und vertraulich.
+              Du steckst fest oder weißt gerade nicht weiter? Wir sind für
+              dich da. Seit 2015 stärken wir Menschen in Iserlohn — mit
+              Coaching, Beratung und einem offenen Ohr. Kostenlos und
+              vertraulich.
             </p>
 
             {/* Dual CTA */}
@@ -148,10 +149,9 @@ export default function Home() {
               Zukunftswerkstatt — Dein Weg in Arbeit
             </h2>
             <p className="text-lg text-darkgray mb-8 max-w-2xl">
-              Du bist zwischen 18 und 35, hast keinen Job, Probleme mit Sucht
-              oder weißt einfach nicht weiter? Wir helfen dir — mit Coaching,
-              Bewerbungshilfe und einem Plan für deine Zukunft. Ohne Druck,
-              ohne Vorurteile.
+              Du bist zwischen 18 und 35 und gerade in einer schwierigen
+              Situation? Wir helfen dir — mit Coaching, Bewerbungshilfe und
+              einem Plan für deine Zukunft. Ohne Druck, ohne Vorurteile.
             </p>
 
             <div className="grid sm:grid-cols-3 gap-6 mb-10">
@@ -222,19 +222,19 @@ export default function Home() {
                 Du bist nicht allein
               </p>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-                Drogen, kein Job, keine Wohnung? Wir helfen.
+                Wenn alles zu viel wird — wir sind für dich da.
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 Im Rahmen des Programms &bdquo;Win-Win — Durch Kooperation zur
-                Integration&ldquo; arbeiten wir mit der Drogenberatung,
-                Streetwork, dem Jobcenter und der Stadt Iserlohn zusammen. Unser
-                Ziel: Junge Männer zwischen 18 und 35 erreichen, die durchs
-                Raster gefallen sind — und ihnen einen Weg zurück zeigen.
-                Vertraulich, kostenlos und ohne Vorurteile.
+                Integration&ldquo; arbeiten wir mit Beratungsstellen, Streetwork,
+                dem Jobcenter und der Stadt Iserlohn zusammen. Unser Ziel: Junge
+                Männer zwischen 18 und 35 erreichen, die gerade feststecken —
+                und gemeinsam einen Weg nach vorne finden. Vertraulich,
+                kostenlos und auf Augenhöhe.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-6">
                 <div className="bg-white/10 rounded-xl px-4 py-2.5 text-white text-sm font-medium">
-                  Suchtberatung & Streetwork
+                  Beratung & Begleitung
                 </div>
                 <div className="bg-white/10 rounded-xl px-4 py-2.5 text-white text-sm font-medium">
                   Coaching & Alltagshilfe
@@ -376,10 +376,10 @@ export default function Home() {
             Brauchst du Hilfe?
           </h2>
           <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Egal was gerade los ist — Sucht, kein Dach über dem Kopf, kein
-            Job oder einfach keinen Plan. Du musst das nicht alleine
-            durchstehen. Meld dich bei uns — kostenlos, vertraulich und ohne
-            Vorurteile.
+            Egal was gerade los ist — ob du feststeckst, keinen Plan hast
+            oder einfach jemanden zum Reden brauchst. Du musst das nicht
+            alleine durchstehen. Meld dich bei uns — kostenlos, vertraulich
+            und auf Augenhöhe.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

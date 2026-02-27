@@ -279,8 +279,8 @@ export default function UeberUns() {
                 Du brauchst Hilfe?
               </h2>
               <p className="text-lg opacity-90 mb-6">
-                Kein Job, schwierige Phase, Suchtprobleme? Meld dich bei
-                uns — kostenlos und vertraulich.
+                Schwierige Phase, alles zu viel? Meld dich bei uns — kostenlos
+                und vertraulich.
               </p>
               <a
                 href="tel:015152496870"
