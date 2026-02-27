@@ -2,11 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Heart } from "lucide-react";
 
 const navLinks = [
   { href: "/zukunftswerkstatt", label: "Zukunftswerkstatt" },
   { href: "/ueber-uns", label: "Über uns" },
+  { href: "/team", label: "Team" },
+  { href: "/veranstaltungen", label: "Veranstaltungen" },
   { href: "/unterstuetzen", label: "Unterstützen" },
   { href: "/kontakt", label: "Kontakt" },
 ];
@@ -18,15 +21,23 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-warmgray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
+          {/* Logos */}
+          <Link href="/" className="flex items-center gap-3 shrink-0">
             <span className="text-xl sm:text-2xl font-extrabold tracking-tight font-[family-name:var(--font-heading)]">
               Lebens<span className="text-orange-600">WERT</span>
             </span>
+            <span className="hidden sm:block w-px h-8 bg-gray-300" />
+            <Image
+              src="/logos/zukunftswerkstatt.png"
+              alt="Zukunftswerkstatt"
+              width={140}
+              height={40}
+              className="hidden sm:block h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -48,7 +59,7 @@ export default function Header() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setOpen(!open)}
-            className="md:hidden p-2 -mr-2 text-anthrazit"
+            className="lg:hidden p-2 -mr-2 text-anthrazit"
             aria-label="Menü öffnen"
           >
             {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -58,7 +69,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-warmgray">
+        <div className="lg:hidden bg-white border-t border-warmgray">
           <nav className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link

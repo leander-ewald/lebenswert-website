@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Heart,
   ArrowRight,
@@ -6,12 +7,6 @@ import {
   Briefcase,
   Calendar,
   HandHeart,
-  Coffee,
-  Lightbulb,
-  Building2,
-  MapPinned,
-  Music,
-  Trophy,
   Check,
 } from "lucide-react";
 
@@ -20,49 +15,49 @@ const projekte = [
     name: "Zukunftswerkstatt",
     desc: "Coaching & Bewerbungshilfe für junge Männer 18–35",
     color: "bg-orange-600",
-    icon: Briefcase,
+    logo: "/logos/zukunftswerkstatt.png",
     href: "/zukunftswerkstatt",
   },
   {
     name: "Checkpoint",
     desc: "Jugendcafé mit Kreativ- und Bildungsangeboten",
     color: "bg-proj-checkpoint",
-    icon: Coffee,
+    logo: "/logos/checkpoint.jpg",
     href: "#",
   },
   {
     name: "Lichtblick",
     desc: "Kinder- & Familienarbeit, Hausaufgabenhilfe",
     color: "bg-proj-lichtblick",
-    icon: Lightbulb,
+    logo: null,
     href: "#",
   },
   {
     name: "Frohet Schaffen",
     desc: "Sozialer Coworking Space & Netzwerk",
     color: "bg-proj-schaffen",
-    icon: Building2,
+    logo: "/logos/frohet-schaffen.png",
     href: "#",
   },
   {
     name: "Frohet Viertel",
     desc: "Quartiersentwicklung südliche Innenstadt",
     color: "bg-proj-viertel",
-    icon: MapPinned,
+    logo: "/logos/frohet-viertel.png",
     href: "#",
   },
   {
     name: "Culture Station",
     desc: "Kulturveranstaltungen & Open-Air",
     color: "bg-proj-culture",
-    icon: Music,
+    logo: "/logos/culture-station.png",
     href: "#",
   },
   {
     name: "Lebenslauf",
     desc: "Jährlicher Spendenlauf für den Verein",
     color: "bg-proj-lebenslauf",
-    icon: Trophy,
+    logo: null,
     href: "#",
   },
 ];
@@ -72,6 +67,24 @@ const impact = [
   { number: "7", label: "Projekte unter einem Dach" },
   { number: "80+", label: "Menschen jährlich begleitet" },
   { number: "1", label: "Quartier, 1.000 Nachbarn" },
+];
+
+const testimonials = [
+  {
+    quote:
+      "Ich wusste nicht, wie man eine Bewerbung schreibt. Nach 3 Monaten bei der Zukunftswerkstatt hatte ich einen Ausbildungsplatz.",
+    name: "T., 23 Jahre",
+  },
+  {
+    quote:
+      "Ich war in einer schwierigen Phase — Drogen, kein Job, keine Perspektive. Die Zukunftswerkstatt hat mir geholfen, da rauszukommen. Heute habe ich eine feste Stelle.",
+    name: "K., 29 Jahre",
+  },
+  {
+    quote:
+      "Die haben mir nicht nur bei der Bewerbung geholfen, sondern auch, wenn es mir schlecht ging. Das war wie eine zweite Familie.",
+    name: "M., 27 Jahre",
+  },
 ];
 
 export default function Home() {
@@ -187,6 +200,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Win-Win Partnerschaft */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-anthrazit rounded-3xl p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-10">
+            <div className="lg:w-1/3 flex justify-center">
+              <Image
+                src="/logos/winwin-winwin_logo_rgb_internet.png"
+                alt="Win-Win Partnerschaft"
+                width={280}
+                height={280}
+                className="w-48 sm:w-64 lg:w-72"
+              />
+            </div>
+            <div className="lg:w-2/3 text-center lg:text-left">
+              <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-3">
+                Win-Win für alle
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+                Gemeinsam gewinnen
+              </h2>
+              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                Bei LebensWERT profitieren alle: Teilnehmer finden ihren Weg in
+                Arbeit, Unternehmen gewinnen motivierte Mitarbeiter, und das
+                Quartier wird lebenswerter. Unsere Projekte verbinden Menschen
+                und schaffen echte Perspektiven — für jeden Beteiligten.
+              </p>
+              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                <div className="bg-white/10 rounded-xl px-5 py-3 text-white text-sm font-medium">
+                  Teilnehmer → Ausbildung & Job
+                </div>
+                <div className="bg-white/10 rounded-xl px-5 py-3 text-white text-sm font-medium">
+                  Unternehmen → Fachkräfte
+                </div>
+                <div className="bg-white/10 rounded-xl px-5 py-3 text-white text-sm font-medium">
+                  Quartier → Gemeinschaft
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projekte Grid */}
       <section className="py-20 bg-warmgray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -207,10 +262,24 @@ export default function Home() {
                 href={p.href}
                 className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all hover:-translate-y-1"
               >
-                <div
-                  className={`w-12 h-12 ${p.color} rounded-xl flex items-center justify-center mb-4`}
-                >
-                  <p.icon className="w-6 h-6 text-white" />
+                <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-4 overflow-hidden">
+                  {p.logo ? (
+                    <Image
+                      src={p.logo}
+                      alt={p.name}
+                      width={64}
+                      height={64}
+                      className="w-16 h-16 object-contain"
+                    />
+                  ) : (
+                    <div
+                      className={`w-16 h-16 ${p.color} rounded-xl flex items-center justify-center`}
+                    >
+                      <span className="text-white font-bold text-lg">
+                        {p.name.charAt(0)}
+                      </span>
+                    </div>
+                  )}
                 </div>
                 <h3 className="text-lg font-bold text-anthrazit mb-1 group-hover:text-orange-600 transition-colors">
                   {p.name}
@@ -243,16 +312,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonial */}
+      {/* Testimonials — 3 in einer Reihe */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-orange-50 rounded-3xl p-8 sm:p-12">
-            <p className="text-xl sm:text-2xl text-anthrazit leading-relaxed italic mb-6">
-              &ldquo;Ich wusste nicht, wie man eine Bewerbung schreibt. Nach 3
-              Monaten bei der Zukunftswerkstatt hatte ich einen
-              Ausbildungsplatz.&rdquo;
-            </p>
-            <p className="text-darkgray font-medium">— T., 23 Jahre</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-anthrazit mb-12 text-center">
+            Das sagen unsere Teilnehmer
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {testimonials.map((t) => (
+              <div
+                key={t.name}
+                className="bg-orange-50 rounded-3xl p-8 flex flex-col"
+              >
+                <p className="text-lg text-anthrazit leading-relaxed italic mb-6 flex-1">
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <p className="text-darkgray font-medium">— {t.name}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -316,16 +393,21 @@ export default function Home() {
           <p className="text-xs text-midgray text-center mb-6 uppercase tracking-wider font-medium">
             Gefördert & unterstützt durch
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <span className="text-sm font-medium text-darkgray">
-              🇪🇺 Europäische Union (ESF Plus)
-            </span>
-            <span className="text-sm font-medium text-darkgray">
-              BMAS — Bundesministerium für Arbeit und Soziales
-            </span>
-            <span className="text-sm font-medium text-darkgray">
-              Stadt Iserlohn
-            </span>
+          <div className="flex flex-wrap justify-center items-center gap-10">
+            <Image
+              src="/logos/esf-bmas_eu_foerderlogo.png"
+              alt="BMAS & EU ESF Plus Förderlogo"
+              width={200}
+              height={80}
+              className="h-16 w-auto"
+            />
+            <Image
+              src="/logos/winwin-winwin_logo_rgb_internet.png"
+              alt="Win-Win"
+              width={100}
+              height={100}
+              className="h-14 w-auto"
+            />
           </div>
         </div>
       </section>

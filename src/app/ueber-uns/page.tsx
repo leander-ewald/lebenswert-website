@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Heart,
   ArrowRight,
@@ -9,6 +10,7 @@ import {
   Target,
   Handshake,
   Shield,
+  Play,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -102,8 +104,31 @@ export default function UeberUns() {
         </div>
       </section>
 
-      {/* Unsere Werte */}
+      {/* Video */}
       <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-anthrazit mb-4 text-center">
+            LebensWERT erleben
+          </h2>
+          <p className="text-darkgray text-lg text-center max-w-2xl mx-auto mb-10">
+            Ein Einblick in unsere Arbeit und die Menschen, die LebensWERT ausmachen.
+          </p>
+          <div className="rounded-3xl overflow-hidden shadow-lg bg-anthrazit">
+            <video
+              controls
+              preload="metadata"
+              className="w-full aspect-video"
+              poster=""
+            >
+              <source src="/ueber-uns-video-web.mp4" type="video/mp4" />
+              Ihr Browser unterstützt kein Video.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      {/* Unsere Werte */}
+      <section className="py-20 bg-warmgray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-anthrazit mb-4 text-center">
             Unsere Werte
@@ -177,34 +202,24 @@ export default function UeberUns() {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Team Teaser */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-anthrazit mb-4 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Users className="w-12 h-12 text-orange-600 mx-auto mb-4" />
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-anthrazit mb-4">
             Unser Team
           </h2>
-          <p className="text-darkgray text-lg text-center max-w-2xl mx-auto mb-12">
-            Menschen, die mit Herzblut für ein lebenswertes Iserlohn arbeiten.
+          <p className="text-darkgray text-lg max-w-2xl mx-auto mb-8">
+            Über 20 engagierte Menschen — Sozialarbeiter, Pädagogen, Erzieher
+            und Ehrenamtliche — arbeiten täglich für ein lebenswertes Iserlohn.
           </p>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { name: "Sönke Kühl", role: "Vorstand" },
-              { name: "Alex Breuker", role: "Sozialmanager" },
-              { name: "Jacqueline Fritz", role: "Leitung Zukunftswerkstatt" },
-              { name: "Angelika Skupin-Fröchte", role: "Beratung & Coaching" },
-              { name: "Claudia Hein", role: "Pädagogische Fachkraft" },
-              { name: "Ilka Espey", role: "Verwaltung" },
-            ].map((person) => (
-              <div key={person.name} className="text-center">
-                <div className="w-24 h-24 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="w-10 h-10 text-orange-600" />
-                </div>
-                <h3 className="font-bold text-anthrazit">{person.name}</h3>
-                <p className="text-sm text-darkgray">{person.role}</p>
-              </div>
-            ))}
-          </div>
+          <Link
+            href="/team"
+            className="inline-flex items-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-500 transition-colors"
+          >
+            Das gesamte Team kennenlernen
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </section>
 
@@ -218,13 +233,31 @@ export default function UeberUns() {
             Unsere Arbeit wird möglich durch die Unterstützung von:
           </p>
 
-          <div className="flex flex-wrap justify-center gap-6">
-            {[
-              "🇪🇺 Europäische Union (ESF Plus)",
-              "BMAS — Bundesministerium für Arbeit und Soziales",
-              "Stadt Iserlohn",
-              "Sparkasse Iserlohn",
-            ].map((partner) => (
+          <div className="flex flex-wrap justify-center items-center gap-10 mb-8">
+            <Image
+              src="/logos/esf-bmas_eu_foerderlogo.png"
+              alt="BMAS & EU ESF Plus Förderlogo"
+              width={200}
+              height={80}
+              className="h-16 w-auto"
+            />
+            <Image
+              src="/logos/winwin-winwin_logo_rgb_internet.png"
+              alt="Win-Win"
+              width={100}
+              height={100}
+              className="h-14 w-auto"
+            />
+            <Image
+              src="/logos/versoehnung.png"
+              alt="Ev. Versöhnungskirchengemeinde"
+              width={120}
+              height={80}
+              className="h-14 w-auto"
+            />
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            {["Stadt Iserlohn", "Sparkasse Iserlohn"].map((partner) => (
               <span
                 key={partner}
                 className="bg-white px-6 py-3 rounded-xl text-darkgray font-medium shadow-sm"

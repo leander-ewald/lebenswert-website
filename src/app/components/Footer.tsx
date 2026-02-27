@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const projekte = [
@@ -10,7 +11,9 @@ const projekte = [
   { href: "#", label: "Culture Station" },
 ];
 
-const support = [
+const more = [
+  { href: "/team", label: "Team" },
+  { href: "/veranstaltungen", label: "Veranstaltungen" },
   { href: "/unterstuetzen", label: "Spenden" },
   { href: "/unterstuetzen#mitglied", label: "Mitglied werden" },
   { href: "/kontakt", label: "Ehrenamt" },
@@ -80,13 +83,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Unterstützen */}
+          {/* Mehr */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
-              Unterstützen
+              Mehr
             </h3>
             <ul className="flex flex-col gap-2">
-              {support.map((s) => (
+              {more.map((s) => (
                 <li key={s.label}>
                   <Link
                     href={s.href}
@@ -121,6 +124,22 @@ export default function Footer() {
 
         {/* Förder-Logos Pflichthinweis */}
         <div className="mt-12 pt-8 border-t border-gray-700">
+          <div className="flex flex-wrap justify-center items-center gap-8 mb-4">
+            <Image
+              src="/logos/esf-bmas_eu_foerderlogo.png"
+              alt="BMAS & EU ESF Plus Förderlogo"
+              width={160}
+              height={64}
+              className="h-10 w-auto brightness-0 invert opacity-70"
+            />
+            <Image
+              src="/logos/winwin-winwin_logo_rgb_internet.png"
+              alt="Win-Win"
+              width={80}
+              height={80}
+              className="h-9 w-auto brightness-0 invert opacity-70"
+            />
+          </div>
           <p className="text-xs text-gray-500 text-center mb-4">
             Gefördert durch das Bundesministerium für Arbeit und Soziales und
             die Europäische Union (ESF Plus)
