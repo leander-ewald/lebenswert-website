@@ -12,6 +12,7 @@ const projekte = [
 ];
 
 const more = [
+  { href: "/zukunftswerkstatt#kontakt", label: "Hilfe finden" },
   { href: "/team", label: "Team" },
   { href: "/veranstaltungen", label: "Veranstaltungen" },
   { href: "/unterstuetzen", label: "Spenden" },

@@ -8,6 +8,8 @@ import {
   Calendar,
   HandHeart,
   Check,
+  Phone,
+  MessageCircle,
 } from "lucide-react";
 
 const projekte = [
@@ -102,8 +104,9 @@ export default function Home() {
               <span className="text-orange-600">lebenswertes</span> Iserlohn
             </h1>
             <p className="text-lg sm:text-xl text-darkgray leading-relaxed mb-10 max-w-2xl">
-              Seit 2015 stärken wir Menschen in der südlichen Innenstadt —
-              mit Coaching, Bildung, Gemeinschaft und einem offenen Ohr.
+              Kein Job, kein Plan, schwierige Phase? Wir helfen dir weiter.
+              Seit 2015 stärken wir Menschen in Iserlohn — mit Coaching,
+              Beratung und einem offenen Ohr. Kostenlos und vertraulich.
             </p>
 
             {/* Dual CTA */}
@@ -145,9 +148,10 @@ export default function Home() {
               Zukunftswerkstatt — Dein Weg in Arbeit
             </h2>
             <p className="text-lg text-darkgray mb-8 max-w-2xl">
-              Du bist zwischen 18 und 35 und suchst einen Job oder eine
-              Ausbildung? Wir helfen dir — mit Coaching, Bewerbungshilfe und
-              einem Plan für deine Zukunft.
+              Du bist zwischen 18 und 35, hast keinen Job, Probleme mit Sucht
+              oder weißt einfach nicht weiter? Wir helfen dir — mit Coaching,
+              Bewerbungshilfe und einem Plan für deine Zukunft. Ohne Druck,
+              ohne Vorurteile.
             </p>
 
             <div className="grid sm:grid-cols-3 gap-6 mb-10">
@@ -215,31 +219,37 @@ export default function Home() {
             </div>
             <div className="lg:w-2/3 text-center lg:text-left">
               <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-3">
-                ESF Plus Förderprogramm
+                Du bist nicht allein
               </p>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-                Win-Win — Durch Kooperation zur Integration
+                Drogen, kein Job, keine Wohnung? Wir helfen.
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Unsere Zukunftswerkstatt wird im Rahmen des ESF
-                Plus-Programms &bdquo;Win-Win&ldquo; gefördert. Das Programm
-                bringt verschiedene Akteure zusammen — Kommunen, Jobcenter,
-                soziale Träger wie die Drogenberatung und Unternehmen — um junge
-                Männer zwischen 18 und 35 Jahren zu erreichen, die durchs Raster
-                fallen: ohne Job, ohne Perspektive, oft mit Suchtproblemen oder
-                ohne festen Wohnsitz.
+                Im Rahmen des Programms &bdquo;Win-Win — Durch Kooperation zur
+                Integration&ldquo; arbeiten wir mit der Drogenberatung,
+                Streetwork, dem Jobcenter und der Stadt Iserlohn zusammen. Unser
+                Ziel: Junge Männer zwischen 18 und 35 erreichen, die durchs
+                Raster gefallen sind — und ihnen einen Weg zurück zeigen.
+                Vertraulich, kostenlos und ohne Vorurteile.
               </p>
-              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                <div className="bg-white/10 rounded-xl px-5 py-3 text-white text-sm font-medium">
-                  Kooperation mit Drogenberatung & Streetwork
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-6">
+                <div className="bg-white/10 rounded-xl px-4 py-2.5 text-white text-sm font-medium">
+                  Suchtberatung & Streetwork
                 </div>
-                <div className="bg-white/10 rounded-xl px-5 py-3 text-white text-sm font-medium">
-                  Beratung, Coaching & Alltagshilfe
+                <div className="bg-white/10 rounded-xl px-4 py-2.5 text-white text-sm font-medium">
+                  Coaching & Alltagshilfe
                 </div>
-                <div className="bg-white/10 rounded-xl px-5 py-3 text-white text-sm font-medium">
-                  Wege in Ausbildung & Arbeit
+                <div className="bg-white/10 rounded-xl px-4 py-2.5 text-white text-sm font-medium">
+                  Weg in Job & Ausbildung
                 </div>
               </div>
+              <a
+                href="tel:015152496870"
+                className="inline-flex items-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-500 transition-colors"
+              >
+                <Phone className="w-5 h-5" />
+                Jetzt anrufen: 0151 52496870
+              </a>
             </div>
           </div>
         </div>
@@ -321,7 +331,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-anthrazit mb-12 text-center">
             Das sagen unsere Teilnehmer
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {testimonials.map((t) => (
               <div
                 key={t.name}
@@ -334,6 +344,65 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          <div className="text-center">
+            <p className="text-lg text-darkgray mb-4">
+              Du erkennst dich wieder? Dann meld dich bei uns.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="tel:015152496870"
+                className="inline-flex items-center justify-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-500 transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                0151 52496870
+              </a>
+              <Link
+                href="/zukunftswerkstatt"
+                className="inline-flex items-center justify-center gap-2 border-2 border-orange-600 text-orange-600 px-6 py-3 rounded-xl font-semibold hover:bg-orange-50 transition-colors"
+              >
+                Mehr über die Zukunftswerkstatt
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Brauchst du Hilfe? — Betroffene CTA */}
+      <section className="py-16 bg-gradient-to-br from-anthrazit to-darkgray text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
+            Brauchst du Hilfe?
+          </h2>
+          <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Egal was gerade los ist — Sucht, kein Dach über dem Kopf, kein
+            Job oder einfach keinen Plan. Du musst das nicht alleine
+            durchstehen. Meld dich bei uns — kostenlos, vertraulich und ohne
+            Vorurteile.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:015152496870"
+              className="inline-flex items-center justify-center gap-2 bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-orange-500 transition-colors"
+            >
+              <Phone className="w-5 h-5" />
+              Anrufen: 0151 52496870
+            </a>
+            <a
+              href="https://wa.me/4915152496870"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-green-500 transition-colors"
+            >
+              <MessageCircle className="w-5 h-5" />
+              WhatsApp schreiben
+            </a>
+          </div>
+          <p className="text-sm text-gray-400 mt-6">
+            Mo–Fr, 9–17 Uhr. Du kannst auch einfach vorbeikommen:
+            Biestein 8-10, Iserlohn.
+          </p>
         </div>
       </section>
 

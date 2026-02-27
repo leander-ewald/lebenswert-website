@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, ArrowRight, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Kontakt — So erreichen Sie uns",
@@ -63,6 +63,40 @@ export default function Kontakt() {
               Ob Frage, Idee oder Interesse an einer Zusammenarbeit — melden Sie
               sich gerne bei uns.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Brauchst du Hilfe? — Betroffene zuerst */}
+      <section className="py-12 bg-anthrazit text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-2xl sm:text-3xl font-extrabold mb-3">
+              Du brauchst Hilfe? Meld dich — wir sind für dich da.
+            </h2>
+            <p className="text-gray-300 mb-6 max-w-xl mx-auto">
+              Kein Job, Suchtprobleme, kein Dach über dem Kopf? Du musst das
+              nicht alleine schaffen. Ruf an oder schreib uns — kostenlos und
+              vertraulich.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="tel:015152496870"
+                className="inline-flex items-center justify-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-500 transition-colors"
+              >
+                <Phone className="w-5 h-5" />
+                0151 52496870
+              </a>
+              <a
+                href="https://wa.me/4915152496870"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-500 transition-colors"
+              >
+                <MessageCircle className="w-5 h-5" />
+                WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -14,6 +14,7 @@ import {
   Mountain,
   Wrench,
   UsersRound,
+  MessageCircle,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -85,9 +86,11 @@ const team = [
 const fuerWen = [
   "Du bist zwischen 18 und 35 Jahre alt",
   "Du suchst einen Job oder eine Ausbildung",
-  "Du wohnst in Iserlohn oder Umgebung",
-  "Du brauchst Hilfe bei Bewerbungen",
-  "Du wünschst dir mehr Struktur im Alltag",
+  "Du hast mit Sucht oder Drogen zu kämpfen",
+  "Du hast keinen festen Wohnsitz",
+  "Du brauchst Hilfe bei Bewerbungen oder Behörden",
+  "Du wünschst dir mehr Struktur und Halt im Alltag",
+  "Du weißt einfach nicht mehr weiter",
 ];
 
 export default function Zukunftswerkstatt() {
@@ -221,8 +224,10 @@ export default function Zukunftswerkstatt() {
               <br />
               Es ist egal, wie lange du schon suchst.
               <br />
+              Es ist egal, was vorher war.
+              <br />
               <strong className="text-orange-600">
-                Wir fangen da an, wo du gerade stehst.
+                Wir fangen da an, wo du gerade stehst — ohne Vorurteile.
               </strong>
             </p>
           </div>
@@ -281,23 +286,33 @@ export default function Zukunftswerkstatt() {
       </section>
 
       {/* Kontakt / So erreichst du uns */}
-      <section className="py-20 bg-anthrazit text-white">
+      <section id="kontakt" className="py-20 bg-anthrazit text-white scroll-mt-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
-            So erreichst du uns
+            Meld dich bei uns
           </h2>
           <p className="text-gray-300 text-lg mb-10">
-            Meld dich einfach — wir freuen uns auf dich.
+            Kein Termin nötig. Ruf an, schreib uns oder komm einfach vorbei.
           </p>
 
-          <div className="grid sm:grid-cols-3 gap-6 mb-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             <a
               href="tel:015152496870"
               className="bg-white/10 rounded-2xl p-6 hover:bg-white/15 transition-colors"
             >
               <Phone className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-              <p className="font-bold mb-1">Telefon</p>
+              <p className="font-bold mb-1">Anrufen</p>
               <p className="text-gray-300">0151 52496870</p>
+            </a>
+            <a
+              href="https://wa.me/4915152496870"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600/20 rounded-2xl p-6 hover:bg-green-600/30 transition-colors"
+            >
+              <MessageCircle className="w-8 h-8 text-green-400 mx-auto mb-3" />
+              <p className="font-bold mb-1">WhatsApp</p>
+              <p className="text-gray-300">Nachricht schreiben</p>
             </a>
             <a
               href="mailto:Alex.Breuker@bewegt-iserlohn.de"
@@ -305,9 +320,7 @@ export default function Zukunftswerkstatt() {
             >
               <Mail className="w-8 h-8 text-orange-500 mx-auto mb-3" />
               <p className="font-bold mb-1">E-Mail</p>
-              <p className="text-gray-300 text-sm">
-                Alex.Breuker@bewegt-iserlohn.de
-              </p>
+              <p className="text-gray-300 text-sm">E-Mail schreiben</p>
             </a>
             <a
               href="https://maps.google.com/?q=Biestein+8-10+58640+Iserlohn"
@@ -316,20 +329,16 @@ export default function Zukunftswerkstatt() {
               className="bg-white/10 rounded-2xl p-6 hover:bg-white/15 transition-colors"
             >
               <MapPin className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-              <p className="font-bold mb-1">Adresse</p>
+              <p className="font-bold mb-1">Vorbeikommen</p>
               <p className="text-gray-300 text-sm">
-                Biestein 8-10, 58640 Iserlohn
+                Biestein 8-10, Iserlohn
               </p>
             </a>
           </div>
 
-          <a
-            href="tel:015152496870"
-            className="inline-flex items-center gap-2 bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-orange-500 transition-colors"
-          >
-            <Phone className="w-5 h-5" />
-            Jetzt Termin vereinbaren
-          </a>
+          <p className="text-gray-400 text-sm">
+            Mo–Fr, 9–17 Uhr. Du brauchst keinen Termin — komm einfach vorbei.
+          </p>
         </div>
       </section>
 
